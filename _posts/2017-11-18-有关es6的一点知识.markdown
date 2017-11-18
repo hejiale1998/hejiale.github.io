@@ -110,7 +110,7 @@ var a = 1;
 <br />        console.log(x, y);
 <br />就可以实现
 <br />（2）.从函数返回多个值
-<br />         function demo () {
+<br />        function demo () {
 <br />            return [1,2,3];
 <br />        }       
 <br />        var [a, b, c] = demo();
