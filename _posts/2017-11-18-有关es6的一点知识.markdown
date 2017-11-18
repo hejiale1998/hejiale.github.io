@@ -88,45 +88,37 @@ var a = 1;
   <br />
  对象的解构赋值
  <br />
-![对象](/images/decon.png)
+![](/img/decon.png)
 <br />
 要注意 将一个已经声明的变量用于解构赋值时必须非常小心<br />
-        js引擎会将{x} 理解成一个代码块，从而发生语法错误。只有不将大括号写在行首可以避免这个问题
-        ```{bash}.
-        var x;
-        {x} = {x:1};       //Uncaught SyntaxError     
-        ({x} = {x:1});
-        console.log(x);
-        ```
+        js引擎会将{x} 理解成一个代码块，从而发生语法错误。只有不将大括号写在行首可以避免这个问题<br />
+        var x; <br />
+        {x} = {x:1};       //Uncaught SyntaxError     <br /> 
+        ({x} = {x:1});<br />
+        console.log(x);<br />
  字符串的解构赋值--- >字符串会转化成一个类数组的对象<br />
  const [a,b,c,d,e] = 'hello';  <br />
  console.log(a,b,c,d,e);    //hello  <br />
 <br />
 用途
 <br />
-（1）交换变量<br />
-以前交换变量的方法是利用两个变量的和或者利用一个中间变量，现在直接
-         ```{bash}.
-        var x = 1;
-        var y = 2;
-        [x, y] = [y, x];       
-        console.log(x, y);
-        ```
-就可以实现<br />
-（2）.从函数返回多个值
-         ```{bash}.
-         function demo () {
-            return [1,2,3];
-        }       
-        var [a, b, c] = demo();
-        ```
-(3).函数参数的定义<br />
-        ```{bash}.
-        function demo1 ({x,y,z}) {
-            console.log(x,y,z);
-        }        
-        demo1({z:3,x:2,y:1});
-        ```
+（1）交换变量
+<br />以前交换变量的方法是利用两个变量的和或者利用一个中间变量，现在直接
+<br />        var x = 1;
+<br />        var y = 2;
+<br />        [x, y] = [y, x];       
+<br />        console.log(x, y);
+<br />就可以实现
+<br />（2）.从函数返回多个值
+<br />         function demo () {
+<br />            return [1,2,3];
+<br />        }       
+<br />        var [a, b, c] = demo();
+(3).函数参数的定义
+<br /> function demo1 ({x,y,z}) {
+<br />            console.log(x,y,z);
+<br />        }        
+<br />        demo1({z:3,x:2,y:1});
 
 <br />
 > 今天就先到这里咯
