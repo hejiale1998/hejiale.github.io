@@ -1,13 +1,14 @@
 ---
 layout:     post
 title:      "es6的一点知识"
-subtitle:   ""
-date:       2017-11-18 16:15
-author:     "hjl"
+subtitle:   " \"let、const、块级作用域以及解构赋值\""
+date:       2017-11-18
+author:     "Yako"
 header-img: "img/post-bg-2015.jpg"
-
+catalog: true
+tags:
+    - 前端
 ---
-
 
 > It never will rain roses. When we want to have more roses we must plant trees。
 
